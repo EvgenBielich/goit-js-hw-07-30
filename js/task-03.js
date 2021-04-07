@@ -25,8 +25,8 @@ const images = [
 const navList = document.querySelector('#gallery');
 
 navList.style.display = 'flex';
+navList.style.flexDirection = 'column';
 navList.style.alignItems = 'center';
-navList.style.justifyContent = 'space-between';
 
 const createNavItem = images.map(image => {
    const navItemEl = document.createElement('li');
